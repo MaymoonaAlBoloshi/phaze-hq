@@ -1,0 +1,31 @@
+# Dependency directory
+node_modules/
+
+# Build output
+**/dist/
+**/build/
+
+# Version control system
+.git/
+
+# Cache files
+.cache/
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# Minified files
+*.min.js
+
+# Bundled files
+*.bundle.js
+
+# Ignore specific JSON files if needed
+# *.json
+
+# Other common directories/files to ignore (uncomment if needed)
+# public/
+# coverage/
