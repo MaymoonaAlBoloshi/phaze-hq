@@ -8,6 +8,7 @@ import userProjectRouter from "./routes/userProjectRoutes";
 import tagRouter from "./routes/tagRoutes";
 import userTagRouter from "./routes/userTagRoutes";
 import noteRouter from "./routes/noteRoutes";
+import birthdayWishRouter from "./routes/birthdayWishRoutes";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -21,6 +22,7 @@ app.use('/user-projects',userProjectRouter)
 app.use('/tags',tagRouter)
 app.use('/user-tags',userTagRouter)
 app.use('/notes',noteRouter)
+app.use('/birthday-wishes',birthdayWishRouter)
 
 app.get("/", (req, res) => {
 	res.send("phaze-hq is running just fine");
