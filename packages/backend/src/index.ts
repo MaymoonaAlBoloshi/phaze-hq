@@ -4,6 +4,7 @@ import morgan from "morgan"
 import userRouter from "./routes/userRoutes";
 import projectRouter from "./routes/projectRoutes";
 import departmentRouter from "./routes/departmentRoutes";
+import userProjectRouter from "./routes/userProjectRoutes";
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -13,6 +14,7 @@ app.use(morgan('dev'));
 app.use('/users', userRouter);
 app.use('/projects',projectRouter)
 app.use('/departments',departmentRouter)
+app.use('/user-projects',userProjectRouter)
 
 app.get("/", (req, res) => {
 	res.send("phaze-hq is running just fine");
