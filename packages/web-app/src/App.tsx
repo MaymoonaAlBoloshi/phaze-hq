@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Button } from "antd";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -9,7 +8,8 @@ function App() {
       <h1 className="text-3xl font-bold underline">
         Welcome to the App
       </h1>
-      <Button type="primary">Ant Design Button</Button>
+      
+      <button className="btn">Hello daisyUI</button>
     </div>
 	);
 }
