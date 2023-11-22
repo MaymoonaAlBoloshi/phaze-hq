@@ -24,6 +24,20 @@ export const getProject = async (req: Request, res: Response) => {
   }
 };
 
+export const getProjectUsers = async (req: Request, res: Response) => {
+  const projectId = parseInt(req.params.projectId);
+  try {
+    const projectWithUsers = await ProjectService.getProjectWithUsers(projectId);
+    if (projectWithUsers) {
+      res.json(projectWithUsers);
+    } else {
+      res.status(404).send('Project not found.');
+    }
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
+
 export const createProject = async (req: Request, res: Response) => {
   try {
     const project = await ProjectService.createProject(req.body);

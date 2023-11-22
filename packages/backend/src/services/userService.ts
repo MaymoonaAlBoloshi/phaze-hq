@@ -12,6 +12,19 @@ export const findUserById = async (id: number) => {
   });
 };
 
+export const getUserWithProjects = async (userId: number) => {
+  return prisma.user.findUnique({
+    where: { id: userId },
+    include: {
+      userProjects: {
+        include: {
+          project: true, // Include all project fields
+        },
+      },
+    },
+  });
+};
+
 export const createUser = async (userData: any) => {
   return await prisma.user.create({
     data: userData,
