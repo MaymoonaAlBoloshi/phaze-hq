@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2019", // or a target appropriate for your environment
+    "module": "commonjs",
+    "outDir": "./dist", // where to output compiled JS files
+    "rootDir": "./src", // where to find TypeScript files
+    "strict": true, // enables strict type-checking options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"], // include all files in src directory
+  "exclude": ["node_modules", "dist"] // exclude directories
+}
