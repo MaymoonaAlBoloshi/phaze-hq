@@ -1,6 +1,16 @@
-# Journey Tracker Monorepo
+# PhazeHQ Monorepo
 
-This monorepo contains the codebase for both the frontend and backend components of the Journey Tracker application. The frontend is built with React and leveraged by Vite, while the backend is a Node.js Express application written in TypeScript.
+This monorepo contains the codebase for both the frontend and backend components of the PhazeHQ application. The frontend is built with React and leveraged by Vite, while the backend is a Node.js Express application written in TypeScript.
+
+PhazeHQ is the HR tool of no ones choice. You gonna hate it absolutely.
+
+### Core upcomming features 
+- [ ] Most of the HR features
+- [ ] Developer Portifolio playes develoepr theme music (CAN'T TURN IT OFF) 
+- [ ] Employee Portifolio Skill XP tracker
+- [ ] Employee Training by mini projects to level up
+- [ ] Admin view of Employee as game cards
+- [ ] Admin view of Employees as cluster maps (visualize teams -  skills - relevancy)
 
 ## Applications
 
@@ -22,8 +32,8 @@ To get started with development, you'll need to have Node.js and npm installed o
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/PhazeRoOman/journey-tracker.git 
-cd journey-tracker
+git clone https://github.com/PhazeRoOman/phaze-hq.git 
+cd phaze-hq
 ```
 
 #### Install Dependancies
